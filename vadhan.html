@@ -92,6 +92,10 @@
 <p>In the <a href="http://privacytools.seas.harvard.edu/">Privacy Tools Project</a> at Harvard, we have been developing a differential privacy tool, <a href="http://psiprivacy.org/">PSI (Private data-Sharing Interface)</a>, that aims to address Items 1 &amp; 2 above <span class="citation" data-cites="gaboardi_psi_2016">(Gaboardi et al. 2016)</span>. PSI is being designed to integrate into data repositories like <a href="https://dataverse.org/">Dataverse</a>, to allow for releasing public statistical summaries and providing interactive queries for exploratory data analysis. PSI is planned for deployment when Dataverse starts to accept sensitive data. (See Crosas whitepaper “Dataverse, DataTags, and a decade building a widely-used data repository platform.”)</p>
 <p>However, PSI’s functionality (in terms of the statistical analyses it supports) is still fairly limited, and the underlying library of implemented differentially private algorithms has not been vetted by the research community at large. Thus, we are also discussing the possibility of expanding our efforts to launch a larger open-source project for the differential privacy community to develop general-purpose and usable tools for differential privacy in which users can have confidence.</p>
 <p>Relatedly, there is still a significant amount of research and engineering to be done to close the gap between many of the theoretical algorithms in the differential privacy research literature and implementations of optimized methods that meet the needs of practicing data analysts, such as those who would study the datasets in ISSOD. In particular, much more work needs to be done on designing practical differential privacy tools for statistical inference (as opposed to descriptive statistics) and for generating synthetic data. Additionally, the standard and most widely studied form of differential privacy is meant for tabular data where the unit of observation is an individual person. There are forms of differential privacy that are applicable to network data (e.g, where a node corresponds to an individual person), but these have been less well-studied than differential privacy for tabular data and are likely a bit further away from yielding practical tools.</p>
+</section>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
 <!-- Further Reading -->
 <!-- =============== -->
 <!-- 1.  Alexandra Wood, Micah Altman, Aaron Bembenek, Mark Bun, Marco -->
@@ -121,7 +125,6 @@
 <p>Wood, Alexandra, Micah Altman, Aaron Bembenek, Mark Bun, Marco Gaboardi, James Honaker, Kobbi Nissim, David R. O’Brien, Thomas Steinke, and Salil Vadhan. 2019. “Differential Privacy: A Primer for a Non-Technical Audience.” <em>Vanderbilt Journal of Entertainment and Technology Law</em>.</p>
 </div>
 </div>
-</section>
 </section>
 
 </article>

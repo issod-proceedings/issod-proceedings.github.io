@@ -35,7 +35,7 @@
 <p>There has been a dramatic shift toward using mobile devices such as smartphones and tablets as the primary interface to access Internet services. Unlike their fixed-line counterparts, these devices also offer ubiquitous mobile connectivity via WiFi and cellular data access, and are equipped with a wide array of sensors (e.g., GPS, camera, and microphone).</p>
 <p>The combination of rich sensors and ubiquitous connectivity make these devices ideal for continuous scientific data collection. Unlike their desktop and laptop counterparts, mobile devices contain more sensors and can more easily collect/transmit data about the world around them even while their people are not actively using the devices (e.g., they are in pockets or purses). For instance, there are myriad apps that can detect how often a user moves, which locations they visit, and what is their current heart rate.</p>
 <p>While such information is valuable for scientific and medical reasons, there are significant concerns associated with gathering personally identifiable information (PII) and/or personal health information (PHI). In fact, we have already seen how commercial apps extensively track users and share their PII with other parties over the Internet <span class="citation" data-cites="recon:mobisys ren2018appversions">(Ren et al. 2016, 2018)</span>, and even though users have in many cases consented to some form of data collection, they are generally unaware of this behavior <span class="citation" data-cites="consolvo:ubicomp">(Consolvo et al. 2010)</span>. Worse, there have been substantial breaches of databases containing extremely sensitive PII, including those by Facebook, Equifax, Google (Plus), and others. In short, even the companies we trust most with our data can be hacked, and thus one can expect the same will happen to any sufficiently interesting store of sensitive information given a long enough time.</p>
-<p>In this white paper, I briefly explore these potential benefits and risks of data collection in the mobile environment. As a researcher whose research projects <span class="citation" data-cites="choffnes:ono mobilyzer:mobisys trafficdiff:imc">(Choffnes and Bustamante 2008; Nikravesh et al. 2015; Kakhki et al. 2015)</span> have gathered data from more than one million users (including more than 100,000 mobile users) and who has studied privacy leaks from commercial services <span class="citation" data-cites="recon:mobisys ren2018appversions pan:panoptispy leung:appvweb">(Ren et al. 2016, 2018; Pan et al. 2018; Leung et al. 2016)</span>, I bring to the table my experience, reasoning, and guidelines for such data collection and risk mitigation.</p>
+<p>In this white paper, I briefly explore these potential benefits and risks of data collection in the mobile environment. As a researcher whose research projects <span class="citation" data-cites="choffnes:ono mobilyzer:mobisys kakhki_identifying_2015-1">(Choffnes and Bustamante 2008; Nikravesh et al. 2015; Kakhki et al. 2015)</span> have gathered data from more than one million users (including more than 100,000 mobile users) and who has studied privacy leaks from commercial services <span class="citation" data-cites="recon:mobisys ren2018appversions pan:panoptispy leung:appvweb">(Ren et al. 2016, 2018; Pan et al. 2018; Leung et al. 2016)</span>, I bring to the table my experience, reasoning, and guidelines for such data collection and risk mitigation.</p>
 </section>
 <section id="data-collection-from-mobile-devices" class="level1">
 <h1>Data Collection from Mobile Devices</h1>
@@ -119,6 +119,9 @@
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
 <p>In this white paper, I discussed a number of ways that information can be collected about subjects for research studies, and how these may pose substantial privacy and security risks to those subjects. I proposed a number of mitigation strategies and other considerations for such data collection. Note that this document is not intended to be a complete treatment of the topic, but rather focus on a summary of key concerns for discussion.</p>
+</section>
+<section id="references" class="level1 unnumbered">
+<h1>References</h1>
 <div id="refs" class="references" role="doc-bibliography">
 <div id="ref-choffnes:ono">
 <p>Choffnes, David R., and Fabián E. Bustamante. 2008. “Taming the Torrent: A Practical Approach to Reducing Cross-ISP Traffic in Peer-to-Peer Systems.” In <em>Proc. Of ACM SIGCOMM</em>.</p>
@@ -126,11 +129,11 @@
 <div id="ref-consolvo:ubicomp">
 <p>Consolvo, Sunny, Jaeyeon Jung, Ben Greenstein, Pauline Powledge, Gabriel Maganis, and Daniel Avrahami. 2010. “The Wi-Fi Privacy Ticker: Improving Awareness &amp; Control of Personal Information Exposure on Wi-Fi.” In <em>Proc. Of UbiComp</em>.</p>
 </div>
-<div id="ref-trafficdiff:imc">
+<div id="ref-kakhki_identifying_2015-1">
 <p>Kakhki, Arash Molavi, Abbas Razaghpanah, Anke Li, Hyungjoon Koo, Rajesh Golani, David R. Choffnes, Phillipa Gill, and Alan Mislove. 2015. “Identifying Traffic Differentiation in Mobile Networks.” In <em>Proc. Of IMC</em>. doi:<a href="https://doi.org/10.1145/2815675.2815691">10.1145/2815675.2815691</a>.</p>
 </div>
 <div id="ref-leung:appvweb">
-<p>Leung, Christophe, Jingjing Ren, David Choffnes, and Christo Wilson. 2016. “Should You Use the App for That? Comparing the Privacy Implications of Web- and App-Based Online Services.” In <em>Proc. Of IMC</em>. <a href="http://dx.doi.org/10.1145/2815675.2815691">http://dx.doi.org/10.1145/2815675.2815691</a>.</p>
+<p>Leung, Christophe, Jingjing Ren, David Choffnes, and Christo Wilson. 2016. “Should You Use the App for That? Comparing the Privacy Implications of Web- and App-Based Online Services.” In <em>Proc. Of IMC</em>. doi:<a href="https://doi.org/10.1145/2815675.2815691">10.1145/2815675.2815691</a>.</p>
 </div>
 <div id="ref-mobilyzer:mobisys">
 <p>Nikravesh, Ashkan, Hongyi Yao, Shichang Xu, David R. Choffnes, and Zhuoqing Morley Mao. 2015. “Mobilyzer: An Open Platform for Controllable Mobile Network Measurements.” In <em>Proc. Of MobiSys</em>. doi:<a href="https://doi.org/10.1145/2742647.2742670">10.1145/2742647.2742670</a>.</p>
