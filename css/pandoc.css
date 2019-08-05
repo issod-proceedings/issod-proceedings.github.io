@@ -5,10 +5,12 @@ q { quotes: "“" "”" "‘" "’"; }
 /* Override section behavior.
  * We only want the top-level <section> to have padding.
  * This makes it easier to work with --section-divs. */
+/*
 section {
   padding-top: initial;
   padding-bottom: initial;
 }
+*/
 article > section {
   padding-top: 1rem;
   padding-bottom: 1rem;
