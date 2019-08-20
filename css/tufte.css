@@ -28,7 +28,39 @@
              font-style: normal; }
 
 /* Tufte CSS styles */
-html { font-size: 15px; }
+html { font-size: 15px; 
+  background: url("../resources/bg-transparent.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+/*html::after {
+  background: url("../resources/header.png") no-repeat center center fixed; 
+  opacity:0.3;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}*/
+/*html::after {
+  content: "";
+  background-image: url("../resources/header.png") no-repeat center center fixed;
+  /*background-repeat: no-repeat;*/
+  /*background-position: right top;*/
+  /*background-attachment: scroll;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}*/
 
 body { 
   width: 87.5%;
@@ -38,26 +70,13 @@ body {
        padding-left: 12.5%;
        padding-right: 12.5%;
        font-family: ETBembo, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
-       background-color: #fffff8;
+       /*background-color: #fffff8;*/
        color: #111;
        max-width: 1400px;
        position: relative;
        counter-reset: sidenote-counter; }
 
-body::after {
-  content: "";
-  background-image: url("../resources/header.png");
-  background-repeat: repeat;
-  background-position: right top;
-  background-attachment: scroll;
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
+
 
 h1 { font-weight: 400;
      margin-top: 0rem;
